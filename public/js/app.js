@@ -27,13 +27,14 @@ function factorcalc() {
         n = 1;
         while (n <= a) {
             if ((a / n) % 1 == 0) {
-                numarray.push(n);
-            }
+               numarray.push(n);
+             }
             n += 1;
         }
     var numarrayspaced = numarray.join(', ')
     $('#factoroutput').html("The factors are " + numarrayspaced);
 }
+
 
 $('#factoraction').click(factorcalc);
 
